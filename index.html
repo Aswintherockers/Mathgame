@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="math2.css" />
+    <style>
+          body{
+    margin-top: 270px;
+    font-size: 26px;
+    /* background:radial-gradient(circle,rgb(59, 8, 245),rgb(232, 237, 232)); */
+    background:linear-gradient(to right, whitesmoke,lightblue);
+    background-size: cover;
+}
+input{
+    border-radius: 20px;
+    padding: 12px;
+    border:solid greenyellow;
+    font-size: 26px;
+}
+
+button{
+    
+    border-radius: 20px;
+    padding: 12px;
+    text-align: center;
+    width: 200px;
+    font-size: 26px;
+    border: solid;
+}
+button:hover{
+    background-color: green;
+    transition: 2s;
+    border:solid red;
+}
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h2 id="question"></h2>
+        <input type="text" id="answer" placeholder="Enter your answer">
+        <button id="submit-btn" class="btn">Submit</button>
+      </div>
+      <div class="timer"></div>
+      <div id="streak-container">
+        <p>Current streak: <span id="streak">0</span></p>
+        <p class="streak1"> <span >🔥</span></p>
+      </div>
+      <script src="confetti.js"></script>
+      <script  src="math2.js"></script>
+</body>
+</html>
